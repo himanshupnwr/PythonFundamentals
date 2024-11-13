@@ -21,3 +21,20 @@ for word, count in sorted(counter.items()):
     print(f'{word:<12}{count}')
 
 print('Number of unique keys:', len(counter.keys()))
+
+#Exercise - Challenge
+
+import random
+numbers = [random.randrange(1,6) for i in range(50)]
+
+from collections import Counter
+counter = Counter(numbers)
+
+for value, count in sorted(counter.items()):
+    print(f'{value:<4}{count}')
+
+# 1   12
+# 2   7
+# 3   13
+# 4   7
+# 5   11
